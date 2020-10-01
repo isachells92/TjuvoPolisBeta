@@ -64,7 +64,7 @@ namespace TjuvoPolisBeta
             RunGameLoop();
         }
 
-        private void DrawFrame()
+        private void DrawFrame()                // Ritar varje Frame \\
         {
             Clear();
             Myworld.Draw();
@@ -92,7 +92,7 @@ namespace TjuvoPolisBeta
             c3.Draw();
             c3.MoveConstantlyInARandomDirection();
         }
-        private void RunGameLoop()
+        private void RunGameLoop()             // Ansvarar för loopen \\
         {
             while (true)
             {
@@ -100,7 +100,7 @@ namespace TjuvoPolisBeta
                 DrawFrame();
 
                 // Render Speed
-                System.Threading.Thread.Sleep(200);
+                System.Threading.Thread.Sleep(200);     // Anger loophastighet \\
             }
         }
     }
